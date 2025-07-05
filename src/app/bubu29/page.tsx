@@ -13,4 +13,4 @@ const PageBuBu29: React.FC = () => (
   <DynamicLoginPage ContentComponent={() => <FreeClaim />} />
 );
 
-export default PageToken;
+export default PageBuBu29;
