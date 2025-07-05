@@ -27,7 +27,7 @@ import { base } from "@/config/rantais";
 // Components libraries
 import Loader from "./ReusableLoader";
 
-const FreeClaim: React.FC = () => {
+const FreeClaim0: React.FC = () => {
   // Ensure state variables are properly declared
   const [currentTime, setCurrentTime] = useState(new Date());
   const [startTime, setStartTime] = useState<Date | null>(null);
@@ -363,4 +363,4 @@ const NFTDescription: React.FC<{
   );
 };
 
-export default FreeClaim;
+export default FreeClaim0;
