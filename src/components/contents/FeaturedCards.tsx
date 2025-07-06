@@ -36,7 +36,7 @@ export default function FeaturedCards() {
           },
           {
             // href: "/paid",
-            href: "#",
+            href: "/bubu29",
             src: featuredPaid,
             alt: paidTitle,
           },
