@@ -27,6 +27,8 @@ import { base } from "@/config/rantais";
 // Components libraries
 import Loader from "./ReusableLoader";
 
+const MAX_UINT256 = 2n ** 256n - 1n;
+
 const FreeClaim: React.FC = () => {
   // Ensure state variables are properly declared
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -237,10 +239,16 @@ const FreeClaim: React.FC = () => {
 
             <h2 className="text-left text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-hitam-judul-body">
               ${calculatePrice()}
-            </h2>
+            </h2> 
             <h2 className="text-left text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-hitam-judul-body">
               {claimedSupply !== null && maxSupply !== null
-                ? `${claimedSupply.toString()}/${maxSupply.toString()}`
+                ? `${claimedSupply.toString()}/${
+                    maxSupply === MAX_UINT256 ? (
+                      <span className="">&#8734;</span>
+                    ) : (
+                      maxSupply.toString()
+                    )
+                  }`
                 : "Loading..."}
             </h2>
             <h2 className="text-left text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-hitam-judul-body">
