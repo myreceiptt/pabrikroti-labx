@@ -239,17 +239,21 @@ const FreeClaim: React.FC = () => {
 
             <h2 className="text-left text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-hitam-judul-body">
               ${calculatePrice()}
-            </h2> 
+            </h2>
             <h2 className="text-left text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-hitam-judul-body">
-              {claimedSupply !== null && maxSupply !== null
-                ? `${claimedSupply.toString()}/${
-                    maxSupply === MAX_UINT256 ? (
-                      <span className="">&#8734;</span>
-                    ) : (
-                      maxSupply.toString()
-                    )
-                  }`
-                : "Loading..."}
+              {claimedSupply !== null && maxSupply !== null ? (
+                <>
+                  {claimedSupply.toString()}
+                    <span className="px-1">/</span>
+                    {maxSupply === MAX_UINT256 ? (
+                    <span className="text-infinity">&#8734;</span>
+                  ) : (
+                    maxSupply.toString()
+                  )}
+                </>
+              ) : (
+                "Loading..."
+              )}
             </h2>
             <h2 className="text-left text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-hitam-judul-body">
               {ownedNfts ? ownedNfts.toString() : "0"}
