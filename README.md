@@ -11,7 +11,7 @@
 Link #1: https://labx.voyage.co.id/  
 Link #2: https://labx.endhonesa.com/
 
-🧬 Forked from [PABRIKROTI-MASTER](https://github.com/myreceiptt/pabrikroti-master/tree/labx)
+🧬 Forked from [PABRIKROTI-MASTER](https://github.com/myreceiptt/pabrikroti-master/releases/tag/v.1.1.3-labx)
 
 ## 📜 License
 
