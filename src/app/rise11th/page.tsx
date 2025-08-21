@@ -6,11 +6,11 @@
 import React from "react";
 
 // Components libraries
-import FreeClaim from "@/components/contents/FreeClaim";
+import FreeClaim1 from "@/components/contents/FreeClaim1";
 import DynamicLoginPage from "@/components/logins/DynamicLogin";
 
 const PageRise11Th: React.FC = () => (
-  <DynamicLoginPage ContentComponent={() => <FreeClaim />} />
+  <DynamicLoginPage ContentComponent={() => <FreeClaim1 />} />
 );
 
 export default PageRise11Th;
