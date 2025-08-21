@@ -73,7 +73,7 @@ const FreeClaim1: React.FC = () => {
 
   const activeAccount = useActiveAccount();
 
-  const tokenIdString = "1";
+  const tokenIdString = "2";
   const tokenIdBigInt = BigInt(tokenIdString);
   const tokenIdNumber = parseInt(tokenIdString, 10);
 
