@@ -1,4 +1,4 @@
-// /src/components/contents/FreeClaim1.tsx
+// /src/components/contents/FreeClaim2.tsx
 
 "use client";
 
@@ -29,7 +29,7 @@ import Loader from "./ReusableLoader";
 
 const MAX_UINT256 = 2n ** 256n - 1n;
 
-const FreeClaim1: React.FC = () => {
+const FreeClaim2: React.FC = () => {
   // Ensure state variables are properly declared
   const [currentTime, setCurrentTime] = useState(new Date());
   const [startTime, setStartTime] = useState<Date | null>(null);
@@ -375,4 +375,4 @@ const NFTDescription: React.FC<{
   );
 };
 
-export default FreeClaim1;
+export default FreeClaim2;
