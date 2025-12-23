@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // ✅ Fix: Turbopack requires an object, not just `true`
-  experimental: {
-    turbo: {
-      rules: {}, // Enables default Turbopack configuration
-    },
+  // Turbopack is stable; use the top-level config.
+  turbopack: {
+    rules: {}, // Enables default Turbopack configuration
   },
 
   // ✅ Keeps Webpack fixes (if needed)
