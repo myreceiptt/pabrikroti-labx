@@ -16,8 +16,8 @@ production-safe on Vercel.
 
 ### Runtime
 
-- Node: **24.x** (local + Vercel)
-- Package manager: **Yarn 4.x** (lockfile: `yarn.lock`)
+- Node: **24.x** (local + Vercel, see `.nvmrc` and `package.json#engines`)
+- Package manager: **Yarn** (lockfile: `yarn.lock`, repo-pinned to `yarn@4.12.0`)
 - Deploy target: **Vercel**
 
 ### Build System
@@ -38,6 +38,7 @@ Monthly is **monitor + verify**, not modernization.
 
 3. Verify build reproducibility:
 
+   - `yarn lint`
    - `yarn build`
 
 4. Verify production sanity:

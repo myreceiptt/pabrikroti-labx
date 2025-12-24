@@ -27,7 +27,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
     "@vercel/analytics": "^1.5.0",
@@ -39,20 +39,21 @@
     "thirdweb": "^5.105.7"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.0.0",
     "@tailwindcss/postcss": "^4.1.11",
-    "@types/node": "^24.0.10",
+    "@types/node": "24.0.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
+    "@typescript-eslint/parser": "^8.0.0",
     "eslint": "^9.30.1",
-    "eslint-config-next": "16.1.1",
+    "globals": "^15.0.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3"
   },
   "engines": {
-    "node": ">=24.0.0",
-    "yarn": ">=4.0.0"
+    "node": "24.x",
+    "yarn": "4.x"
   },
   "packageManager": "yarn@4.12.0"
 }
