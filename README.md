@@ -11,18 +11,18 @@
 ## Maintenance by Prof. NOTA Evergreen Standard
 
 This repo is a **Live Artefact App**: the user-facing UX is intentionally frozen
-(“MINT CLOSED”, no wallet prompts), while the codebase remains buildable and
+("MINT CLOSED", no wallet prompts), while the codebase remains buildable and
 production-safe on Vercel.
 
 ### Runtime
 
-- Node: **24.x** (local + Vercel, see `.nvmrc` and `package.json#engines`)
-- Package manager: **Yarn** (lockfile: `yarn.lock`, repo-pinned to `yarn@4.12.0`)
+- Node: **24.x** (local + Vercel)
+- Package manager: **Yarn** (lockfile: `yarn.lock`)
 - Deploy target: **Vercel**
 
 ### Build System
 
-- Next.js **16.x** (Turbopack)
+- Next.js **16** (Turbopack)
 
 ### Monthly Safe Updates (recommended)
 
@@ -30,11 +30,11 @@ Monthly is **monitor + verify**, not modernization.
 
 1. Check what’s outdated (report only):
 
-   - `yarn up -i`
+   - `yarn outdated`
 
 2. Security report (report only unless explicitly approved):
 
-   - `yarn npm audit --severity moderate`
+   - `yarn audit --level moderate`
 
 3. Verify build reproducibility:
 
@@ -43,7 +43,7 @@ Monthly is **monitor + verify**, not modernization.
 
 4. Verify production sanity:
 
-   - Confirm “MINT CLOSED”
+   - Confirm "MINT CLOSED"
    - Confirm no wallet prompts / connect flows
    - Confirm no critical console errors
 
