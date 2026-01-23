@@ -17,12 +17,13 @@ production-safe on Vercel.
 ### Runtime
 
 - Node: **24.x** (local + Vercel)
-- Package manager: **Yarn** (lockfile: `yarn.lock`)
+- Package manager: **Yarn 4.12.0** (lockfile: `yarn.lock`)
+- `@types/node`: **24.10.7** (pinned to match Node 24; 25.x intentionally deferred)
 - Deploy target: **Vercel**
 
 ### Build System
 
-- Next.js **16** (Turbopack)
+- Next.js **16.1.4** (Turbopack)
 
 ### Monthly Safe Updates (recommended)
 
@@ -34,7 +35,7 @@ Monthly is **monitor + verify**, not modernization.
 
 2. Security report (report only unless explicitly approved):
 
-   - `yarn audit --level moderate`
+   - `yarn npm audit --severity moderate`
 
 3. Verify build reproducibility:
 
@@ -87,19 +88,19 @@ This project is licensed under a [**Custom Limited License**](./LICENSE) by [Pro
 ### Install dependencies
 
 ```bash
-yarn
+yarn install
 ```
 
-### Check outdated dependencies
+### Review dependency updates (interactive)
 
 ```bash
 yarn up -i
 ```
 
-### Upgrade dependencies interactively
+### Upgrade dependencies
 
 ```bash
-yarn up -i
+yarn up -R "*"
 ```
 
 ### Start development server
@@ -111,7 +112,7 @@ yarn dev
 ### Check all the code
 
 ```bash
-yarn run lint
+yarn lint
 ```
 
 ### Create a production build
