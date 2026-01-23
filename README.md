@@ -77,6 +77,28 @@ Link #2: [labx.endhonesa.com](https://labx.endhonesa.com/)
 
 🧬 Forked from [PABRIKROTI-MASTER](https://github.com/myreceiptt/pabrikroti-master/releases/tag/v.1.1.3-labx)
 
+## About This Repo
+
+This repo is a prototype web app built for **LabX**—a creative and collaborative venture within **BUBU.com** (est. late 2020)—as part of a broader collaboration with **Voyage Global** to bring Web3 utilities into real-world programs, events, and community activities.
+
+### What it does
+
+- Provides a Web3-integrated interface to issue and manage digital participation artifacts (POAP-style) and event ticketing flows.
+- Utilizes **NFTs** and **FTs** on the **Base** blockchain to support onchain proofs and lightweight access utilities for offline events (including the LabX anniversary in 2025).
+
+### Technology
+
+- Next.js (App Router) + React + TypeScript
+- Tailwind CSS
+- thirdweb (EVM wallet + contract integrations)
+- Vercel deployment
+
+### How we build (quality + workflow)
+
+- We keep the repo production-safe on Node 24 / Vercel and validate every upgrade with audit/lint/build.
+- We ship changes in small, reviewable steps and document why each update exists (security, stability, or lifecycle compatibility).
+- We prioritize preserving the artefact UX while ensuring the codebase stays buildable and deployable.
+
 ## 📜 License
 
 This project is licensed under a [**Custom Limited License**](./LICENSE) by [Prof. NOTA & Prof. NOTA Inc.](https://nota.endhonesa.com/).
